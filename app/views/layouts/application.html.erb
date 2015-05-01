@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>1337 U53RS</title>
+  <title>1337</title>
   <%= stylesheet_link_tag    'application', default: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'default', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -16,6 +16,8 @@
 	<% end %>
 	<%= yield %>
 </div>
+
+<%= javascript_include_tag :defaults %>
 
 </body>
 </html>
