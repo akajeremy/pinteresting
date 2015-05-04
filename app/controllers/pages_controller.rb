@@ -8,4 +8,7 @@ class PagesController < ApplicationController
   def pinned
   end
 
+  def destroy
+  end
+
 end

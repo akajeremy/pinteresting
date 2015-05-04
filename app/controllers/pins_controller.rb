@@ -1,6 +1,6 @@
 class PinsController < ApplicationController
   before_action :set_pin, only: [:show, :edit, :update, :destroy]
-
+  
   respond_to :html
 
   def index
@@ -33,6 +33,7 @@ class PinsController < ApplicationController
 
   def destroy
     @pin.destroy
+    redirect_to root_path
     respond_with(@pin)
   end
 
